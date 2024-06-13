@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+#comments{
+    background-image: radial-gradient(circle at 50% -20.71%, #b2dafc 0, #b8d9fd 6.25%, #bed7fd 12.5%, #c5d5fd 18.75%, #ccd4fc 25%, #d2d2fa 31.25%, #d9d0f8 37.5%, #dfcff5 43.75%, #e5cdf2 50%, #eaccee 56.25%, #efcaea 62.5%, #f4c9e5 68.75%, #f8c8e0 75%, #fbc8db 81.25%, #fdc7d6 87.5%, #ffc7d1 93.75%, #ffc7cc 100%);
+ }
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+.comments-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.comments-block{
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.comment-card{
+    background-image: url(card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+}
+
+.comment-card h3{
+    font-size: 18px;
+    font-family: 'Comfortaa';
+    padding: 10px;
+
+}
+.comment-card  p{
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment{
+    background-image: url(comment.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 327px;
+    height: 161px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comment p{
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    max-width: 250px;
+}
+.title{
+    padding-top: 25px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 #000000;
+}
+@media (max-width: 1000px){
+    .comments-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .comment{
+        background-image: url(comment-mobile.png);
+    }
+
+    .comment p{
+        font-size: 15px;
+        max-width: 290px;
+    }
+    .title{
+        font-size: 50px;
+        padding-top: 30px;
+    }
+}
