@@ -77,6 +77,28 @@ section{
     font-size: 80px;
     text-shadow: 5px 5px 0 #000000;
 }
+.button{
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid #000;
+    background: #BBFF2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 0 #000000;
+    transition-duration: 0.3s;
+    position: fixed;
+    margin-left: 600px;
+    margin-top: 675px;
+}
+
+.button a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
 @media (max-width: 1000px){
     .comments-block{
         flex-direction: column;
@@ -98,4 +120,15 @@ section{
         font-size: 50px;
         padding-top: 30px;
     }
+    .button{
+        width: 150px;
+        height: 40px;
+        z-index: 2;
+        margin-left: 333px;
+    }
+    
+    .button a {
+        font-size: 15px;
+    }
+ 
 }
